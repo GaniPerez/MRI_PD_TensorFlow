@@ -4,10 +4,15 @@
 This repo consists of python code and data files needed to train a convolutional neural network to distinguish between 3T T1-weighted MRIs of Parkinson's Disease patients versus relatively age-matched, healthy controls. The cohort consists of 3T T1-weighted MRIs of 36 healthy patients and 47 PD cases from the Neuro-consortium (neurocon) and Tao Wu dataset (taowu). Downloads for both datasets is available [here](http://fcon_1000.projects.nitrc.org/indi/retro/parkinsons.html).
 
 *Acknowledgement:* If you use re-adapt this workflow for any other dataset, please be sure to cite:
+
 **Brain Extraction**
+
 C. Ledig, R. A. Heckemann, A. Hammers, J. C. Lopez, V. F. J. Newcombe, A. Makropoulos, J. Loetjoenen, D. Menon and D. Rueckert, "Robust whole-brain segmentation: Application to traumatic brain injury", Medical Image Analysis, 21(1), pp. 40-58, 2015.
+
 R. Heckemann, C. Ledig, K. R. Gray, P. Aljabar, D. Rueckert, J. V. Hajnal, and A. Hammers, "Brain extraction using label propagation and group agreement: pincram", PLoS ONE, 10(7), pp. e0129211, 2015.
+
 **Subsample Generation**
+
 W. Lin, T. Tong, Q Gao., D. Guo, Y. Yang, G. Guo, M. Xiao, M. Du, X. Qu, and The Alzheimer's Disease Neuroimaging Initiative, "Convolutional neural networks-based MRI image analysis for the Alzheimer's disease prediction from mild cognitive impairment", Frontiers in Neuroscience, 2018.
 
 ### The Workflow
