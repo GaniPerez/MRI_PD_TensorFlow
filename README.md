@@ -55,3 +55,7 @@ Running the workflow should be relatively straightforward. The general direction
 2. Go to the git clone directory on your terminal and run malpem_proot_bulk.sh with ```sh malpem_proot_bulk.sh```. MALPEM will normalize each MRI image, put it into voxel space, generate masks for the skull to remove it, then segment the brain into various brain regions of interest. This will take a few days to run -- at t=8 threads, each 256x256x150 MRI takes about 40min-1hr to process. Alternatively, you may ask me for the MALPEM-processed output masks.
 3. Ensure that the MALPEM output files are located in a new directory named "MALPEM_finished_runs", located directly in the root directory of the git repository.
 4. Open up the jupyter notebook and run through all cells. The notebook is written tutorial-style with markdown explaining most steps, so it should be fairly easy to follow along.
+
+## Final Thoughts
+
+Please let me know if there are any problems working with this project. This project is a lot of "firsts" for me (first python project, first time using github, first machine learning project, etc.) so I am happy to fix anything that doesn't work correctly.
