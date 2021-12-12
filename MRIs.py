@@ -15,6 +15,23 @@ import numpy as np
 import matplotlib.pyplot as plt
 import random
 
+def test_model_stats(confusion_matrix):
+    """using a confusion matrix, outputs accuracy, precision, sensitivity, and specificity.
+    :param confusion_matrix: 2x2 confusion matrix
+    :return: accuracy, precision, sensitivity, specificity"""
+    TP = confusion_matrix[1,1]
+    FP = confusion_matrix[0,1]
+    TN = confusion_matrix[0,0]
+    FN = confusion_matrix[1,0]
+    
+    accuracy = (TP + TN) / (TP + FP + FN + TN)
+    precision = TP / (TP + FP)
+    sensitivity = TP / (TP + FN)
+    specificity = TN / (TN+FP)
+    
+    print(f'Accuracy =\t{accuracy}\nPrecision =\t{precision}\nSensitivity =\t{sensitivity}\nSpecificity =\t{specificity}')
+    return accuracy, precision, sensitivity, specificity
+
 def plot_images(images, cls_true, cls_pred=None, img_shape=(32,32,3)):
     """plots images with class value and predicted value (optionally)"""
     
@@ -121,6 +138,7 @@ class MRI_input_array:
         
         if not load_dir is None:
             
+            print("Loading images from directory...")
             self.load_dir = load_dir
             
             img_vals_full, cls_list_full = self._load_subsamples(load_dir)
@@ -153,6 +171,8 @@ class MRI_input_array:
         else:
             
             # assert (input_dir is None or output_dir is None), "You must specify an input and output directory as input_dir and output_dir."
+            
+            print("Generating new subsamples from input MRIs...")
             
             self.input_dir = input_dir
             self.output_dir = output_dir
