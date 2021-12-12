@@ -1,7 +1,7 @@
 # MRI_PD_TensorFlow
 
 ## Introduction
-This repo consists of python code and data files needed to train a convolutional neural network to distinguish between 3T T1-weighted MRIs of Parkinson's Disease patients versus relatively age-matched, healthy controls. The cohort consists of 3T T1-weighted MRIs of 36 healthy patients and 47 PD cases from the Neuro-consortium (neurocon) and Tao Wu dataset (taowu). Downloads for both datasets is available [here](http://fcon_1000.projects.nitrc.org/indi/retro/parkinsons.html).
+This repo consists of python code and data files needed to train a convolutional neural network to distinguish between 3T T1-weighted MRIs of Parkinson's Disease patients versus relatively age-matched, healthy controls. The cohort consists of 3T T1-weighted MRIs of 36 healthy patients and 47 PD cases from the Neurocon (neurocon) and Tao Wu dataset (taowu). Downloads for both datasets is available [here](http://fcon_1000.projects.nitrc.org/indi/retro/parkinsons.html).
 
 *Acknowledgement:* If you use re-adapt this workflow for any other dataset, please be sure to cite:
 
