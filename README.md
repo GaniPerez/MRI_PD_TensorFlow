@@ -58,4 +58,4 @@ Running the workflow should be relatively straightforward. The general direction
 
 ## Final Thoughts
 
-Please let me know if there are any problems working with this project. This project is a lot of "firsts" for me (first python project, first time using github, first machine learning project, etc.) so I am happy to fix anything that doesn't work correctly.
+Please let me know if there are any problems working with this project. I can primarily be reached at gani.perez@gmail.com.
